@@ -13,7 +13,7 @@ title.textContent = 'Current Weather';
 async function fetchWeather(city) {
   try {
     let response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=11d3bf8cd3083b0bd6580e863be7ffe3`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=11d3bf8cd3083b0bd6580e863be7ffe3`,
       { mode: 'cors' }
     );
     let convertData = await response.json();
