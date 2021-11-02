@@ -12,7 +12,7 @@ module.exports = {
     port: 3000,
   },
 
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
