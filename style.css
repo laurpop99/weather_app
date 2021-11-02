@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex: 0.1;
+  background-color: #40424b;
+}
+
+.logo {
+  margin-left: 100px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.nav {
+  background-color: #8c8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.nav-main {
+  margin-left: 250px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: nowrap;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav .search {
+  padding: 10px;
+}
+
+input[type='text'] {
+  width: 250px;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn {
+  color: white;
+  background-color: rgb(58, 57, 57);
+  border: none;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(80, 79, 79);
+}
+
+/* SLIDER */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40.5px;
+  height: 22.95px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #262727;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 17.55px;
+  width: 17.55px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #262727;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #262727;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17.55px);
+  -ms-transform: translateX(17.55px);
+  transform: translateX(17.55px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.tempLabel {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(58, 57, 57);
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  background-color: #8c8f99;
+}
+
+.footer {
+  flex: 0.05;
+}
+
+.mainContainer {
+  margin-top: 25px;
+  width: 300px;
+  background-color: rgb(58, 57, 57);
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px rgb(51, 51, 51);
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  padding: 25px;
+}
+
+.mainContent h2 {
+  font-size: 42px;
+  text-align: center;
+}
+.mainContent {
+  font-size: 20px;
+}
+
+.cityTemp {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.mainContent h2,
+p {
+  margin: 0px;
+  padding: 10px;
+}
