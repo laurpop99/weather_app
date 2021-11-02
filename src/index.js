@@ -1,4 +1,4 @@
-import './style.css';
+import '../dist/style.css';
 import Icon from './logo.png';
 import * as DOM from './DOM.js';
 //DOM

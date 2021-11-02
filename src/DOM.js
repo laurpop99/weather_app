@@ -1,4 +1,4 @@
-import './style.css';
+import '../dist/style.css';
 
 export function displayDOM(city, temp, feels, humid) {
   const content = document.querySelector('.content');
